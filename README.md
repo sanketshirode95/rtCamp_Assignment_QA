@@ -12,5 +12,5 @@ and wishlist Functionality-Validate Product Wishlist functionality using Playwri
 2. **Install JDK (Java Development Kit)**: Make sure you have the JDK installed on your system. You can download and install it from the [official Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
 3. **Clone the Repository**: Clone this repository to your local machine using Git:
    ```bash
-   git clone https://github.com/your_username/java-playwright-automation.git
+   git clone https://github.com/sanketshirode95/rtCamp_Assignment_QA.git
 
