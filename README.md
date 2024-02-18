@@ -2,7 +2,9 @@
 Assignment to assess both manual and automation testing skills.
 ## Description
 
-The provided test cases demonstrate how to automate browser interactions such as navigating to web pages, filling out forms, and extracting data using Playwright's Java API.
+The provided test cases demonstrate how to automate browser interactions such as go to amazon.com-validate Login,
+product checkout-should be able to add product to cart, search functionality-Validate Search Result 
+and wishlist Functionality-Validate Product Wishlist functionality using Playwright framework.
 
 ## Setup
 
