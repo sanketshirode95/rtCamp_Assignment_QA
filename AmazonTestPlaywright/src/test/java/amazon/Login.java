@@ -11,8 +11,8 @@ public class Login {
 		Playwright playwright = Playwright.create();
 		Browser browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
 		Page page = browser.newPage();
+
 		// Navigate to amazon login page
-		
 		page.navigate("https://www.amazon.in/");
 		Locator myAccount = page.locator("//a[@id='nav-link-accountList']");
 		myAccount.hover();
