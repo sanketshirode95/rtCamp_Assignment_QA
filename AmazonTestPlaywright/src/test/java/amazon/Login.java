@@ -5,9 +5,11 @@ import com.microsoft.playwright.BrowserType.LaunchOptions;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-public class Login {
+public class Login 
+{
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException 
+	{
 		Playwright playwright = Playwright.create();
 		Browser browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
 		Page page = browser.newPage();
@@ -16,14 +18,14 @@ public class Login {
 		page.navigate("https://www.amazon.in/");
 		Locator myAccount = page.locator("//a[@id='nav-link-accountList']");
 		myAccount.hover();
-		page.click("//div[@id='nav-flyout-ya-signin']//span[@class='nav-action-inner'][normalize-space()='Sign in']");
+		page.click("//*[@id="nav-flyout-ya-signin"]/a/span");
 
 		// enter login details
-		page.fill("#ap_email", "7020801623");
-		page.click("#continue");
+		page.fill("//*[@name="email"]", "7020801623");
+		page.click("//*[@type="submit"]");
 
-		page.fill("#ap_password", "sanket1808");
-		page.click("#signInSubmit");
+		page.fill("//*[@name="password"]", "sanket1808");
+		page.click("//*[@id="auth-signin-button-announce"]");
 
 	}
 
