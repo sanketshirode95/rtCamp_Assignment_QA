@@ -11,10 +11,11 @@ public class CheckoutProduct {
 
 	public static void main(String[] args) 
 	{
-		Playwright playwright=Playwright.create();
+	Playwright playwright=Playwright.create();
         Browser browser= playwright.chromium().launch(new LaunchOptions().setHeadless(false));
         Page page=browser.newPage();
         Login_po login_po=new Login_po();
+		
         // Navigate to amazon login page 
         page.navigate("https://www.amazon.in/");
         Locator myAccount=page.locator("//a[@id='nav-link-accountList']");
