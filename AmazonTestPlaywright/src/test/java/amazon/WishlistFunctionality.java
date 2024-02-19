@@ -14,10 +14,20 @@ public class WishlistFunctionality {
 	public static void main(String[] args) throws InterruptedException {
 		Playwright playwright = Playwright.create();
 		Browser browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
-		// Browser browser = playwright.chromium().launch();
 		Page page = browser.newPage();
+
+		// Navigate to amazon login page
 		page.navigate("https://www.amazon.in/");
-		page.waitForLoadState(LoadState.DOMCONTENTLOADED);
+		Locator myAccount = page.locator("//a[@id='nav-link-accountList']");
+		myAccount.hover();
+		page.click("//*[@id="nav-flyout-ya-signin"]/a/span");
+
+		// enter login details
+		page.fill("//*[@name="email"]", "7020801623");
+		page.click("//*[@type="submit"]");
+
+		page.fill("//*[@name="password"]", "sanket1808");
+		page.click("//*[@id="auth-signin-button-announce"]");
 
 		// Search for a product
 		page.fill("input[id='twotabsearchtextbox']", "playstation 5");
@@ -26,12 +36,9 @@ public class WishlistFunctionality {
 
 		// Click on the first product in the search results
 		page.click("//span[normalize-space()='Sony PS5 Console']");
-		page.waitForLoadState(LoadState.DOMCONTENTLOADED);
+		page.waitForLoadState(LoadState.DOMCONTENTLOADED);		
 
-		// Scroll down to the bottom of the page
-		
-
-		// Click on the 'Add to List' button to add the product to wishlist
+		// Click on the 'Add to WIsh List' button to add the product to wishlist
 		page.click("//a[@title='Add to Wish List']");
 		page.waitForLoadState(LoadState.DOMCONTENTLOADED);
 
