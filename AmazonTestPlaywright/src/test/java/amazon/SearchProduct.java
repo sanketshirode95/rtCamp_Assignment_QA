@@ -6,9 +6,10 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.BrowserType.LaunchOptions;
 
-public class SearchProduct {
-
-	public static void main(String[] args) {
+public class SearchProduct 
+{
+       public static void main(String[] args)
+	{
 		Playwright playwright = Playwright.create();
 		Browser browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false));
 		Page page = browser.newPage();
