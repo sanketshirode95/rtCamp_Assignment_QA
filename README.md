@@ -40,6 +40,6 @@ and wishlist Functionality-Validate Product Wishlist functionality using Playwri
 
 # Manual Testing 
    Do the UI testing of qa.rtcamp.net web page :
-   Here is the link google sheet "https://docs.google.com/spreadsheets/d/19T-osh_NlAQ-fEb1vNnnheiKbGcpKQ4E0IUs037OBY0/edit?usp=sharing"
+   Here is the for link google sheet "https://docs.google.com/spreadsheets/d/19T-osh_NlAQ-fEb1vNnnheiKbGcpKQ4E0IUs037OBY0/edit?usp=sharing"
    
 
