@@ -1,7 +1,7 @@
 # rtCamp_Assignment_QA
 Assignment to assess both manual and automation testing skills.
 
-#  Amazon Automation with Playwright java framework
+# Automation with Playwright java framework
 
 The provided test cases demonstrate how to automate browser interactions such as go to amazon.com-validate Login,
 product checkout-should be able to add product to cart, search functionality-Validate Search Result 
@@ -36,12 +36,10 @@ and wishlist Functionality-Validate Product Wishlist functionality using Playwri
 
 # Help Manual
    Document the flow of purchasing a product on Amazon, login, Checking Order History, and downloading invoices and to make it easy to understand.
-   Here is the link for google document 
-    " https://docs.google.com/document/d/1Cs56rXMkLBzjDFmYOddzlhFOLwMPZ75_wVfLRmtolCQ/edit?usp=sharing "
+   Here is the link for google document "https://docs.google.com/document/d/1Cs56rXMkLBzjDFmYOddzlhFOLwMPZ75_wVfLRmtolCQ/edit?usp=sharing"
 
 # Manual Testing 
-   Do the UI testing of qa.rtcamp.net web page :e 
-   Here is the link google sheet 
-    "https://docs.google.com/spreadsheets/d/19T-osh_NlAQ-fEb1vNnnheiKbGcpKQ4E0IUs037OBY0/edit?usp=sharing"
+   Do the UI testing of qa.rtcamp.net web page :
+   Here is the link google sheet "https://docs.google.com/spreadsheets/d/19T-osh_NlAQ-fEb1vNnnheiKbGcpKQ4E0IUs037OBY0/edit?usp=sharing"
    
 
